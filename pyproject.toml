@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circle-cli-tool"
+version = "1.0.0"
+dependencies = [
+    "typer",
+    "playwright",
+    "keyring",
+    "platformdirs",
+    "requests"
+]
+
+[project.scripts]
+circle-cli = "main:app"
