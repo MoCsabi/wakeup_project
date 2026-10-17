@@ -69,7 +69,7 @@ def listAllVMs():
     config=get_config()
     vms:dict=config.get("vms",dict())
     for name,data in vms.items():
-        print(f"{name}: {data.get("server","NOT FOUND")}, {data.get("id","NOT FOUND")}")
+        print(f"{name}: {data.get('server','NOT FOUND')}, {data.get('id','NOT FOUND')}")
 def removeSavedVM(name:str):
     config=get_config()
     vms:dict=config.get("vms",dict())
