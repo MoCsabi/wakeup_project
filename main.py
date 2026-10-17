@@ -191,7 +191,7 @@ def generateWebContext(s:Szerver):
         page.fill("[name='j_password']", passwd)
         page.click('[id="login-submit-button"]')
         page.wait_for_url("**/dashboard/**")
-        return context.cookies, page.content()
+        return context.cookies(), page.content()
 
 def fetch_cookies(s:Szerver)->dict:
     print("Gathering cookies...")
