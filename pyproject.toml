@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "circle-cli-tool"
-requires-python = ">=3.16"
+requires-python = ">=3.12"
 version = "1.0.1"
 dependencies = [
     "typer",
