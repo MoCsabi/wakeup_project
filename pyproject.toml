@@ -4,7 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "circle-cli-tool"
-version = "1.0.0"
+requires-python = ">=3.16"
+version = "1.0.1"
 dependencies = [
     "typer",
     "playwright",
